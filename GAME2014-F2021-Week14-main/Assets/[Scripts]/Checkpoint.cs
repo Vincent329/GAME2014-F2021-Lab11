@@ -9,17 +9,13 @@ public class Checkpoint : MonoBehaviour
     
     public Vector3 spawnPosition;
     public Vector3 triggerPosition;
-     
-    private Vector3 currentSpawnPosition;
-    private Vector3  currentTriggerPosition;
+
 
     void Start()
     {
-        spawnPosition = (spawnPoint.position);
-        triggerPosition = (Trigger.position);
-        
-        currentSpawnPosition = spawnPosition;
-        currentTriggerPosition = triggerPosition;
+        spawnPosition = spawnPoint.position;
+        triggerPosition = Trigger.position;
+      
     }
 
     //// Update is called once per 

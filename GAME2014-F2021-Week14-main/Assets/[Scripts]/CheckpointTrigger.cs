@@ -26,7 +26,8 @@ public class CheckpointTrigger : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             Debug.Log("Checkpoint Reached");
-            gameController.SetSpawnPoint(checkpointSpawn);
+            gameController.SetSpawnPoint(GetComponentInParent<Checkpoint>().spawnPosition);
+            gameObject.SetActive(false);
         }
 
     }
